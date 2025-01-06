@@ -11,10 +11,10 @@
 <body>
   <nav>
     <a href="#">
-      <img src="img/Netflix_Logo_RGB.png" class="logo">
+      <img src="img/Netflix_Logo_RGB.png" class="logo" alt="Netflix Logo">
     </a>
     <form>
-      <label>Search for: </label>
+      <label for="searchInput">Search for:</label>
       <div class="radiobtn">
         <input type="radio" name="watchtype" id="movie" value="movie">
         <label for="movie">Movie</label>
@@ -24,10 +24,9 @@
         <label for="tvshow">TV Show</label>
       </div>
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search using IMDb/TMDb ID..." id="searchInput">
-        <button class="btn btn-danger" type="button" onclick="handleSearch()">Search</button>
+        <input type="text" class="form-control" placeholder="Search using IMDb/TMDb ID..." id="searchInput" aria-label="Search Field">
+        <button class="btn btn-danger" type="button" onclick="handleSearch()" title="Click to search">Search</button>
       </div>
-      
     </form>
   </nav>
   <div class="player-body">
